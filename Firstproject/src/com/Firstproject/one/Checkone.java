@@ -1,7 +1,10 @@
 package com.Firstproject.one;
 
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.util.concurrent.TimeUnit;
 
+import org.openqa.jetty.html.Break;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
@@ -15,7 +18,7 @@ import org.testng.annotations.Test;
 
 public class Checkone {
   @Test
-  public void f() throws InterruptedException {
+  public void f() throws InterruptedException, FileNotFoundException {
 	  WebDriver driver= new FirefoxDriver();
 	  driver.get("https://pohostaging.com/");
 	  driver.manage().window().maximize();
@@ -60,14 +63,25 @@ public class Checkone {
 	  //driver.findElement(By.xpath("//input[@name='update_cart']")).click();
 	  driver.findElement(By.xpath("//a[contains(text(),'Proceed to checkout')]")).click();
 	  js.executeScript("window.scrollBy(0,1650)", "");
-	  WebElement o= driver.findElement(By.xpath("//input[@id='payment_method_bacs']"));
-	  int xloc=o.getLocation().x;
-	  int yloc=o.getLocation().y;
-	  act.moveByOffset(xloc, yloc).click().perform();
+//	 
+//	  try {
+//		  driver.findElement(By.xpath("//li[input[@id='payment_method_bacs']]")).click();
+//	} catch (Exception e) {
+//		System.out.println("wt to do");
+//		// TODO: handle exception
+//	}
+  WebElement o= driver.findElement(By.xpath("//li[input[@id='payment_method_bacs']]"));
+  int xloc=o.getLocation().x;
+  int yloc=o.getLocation().y;
+  act.moveByOffset(xloc, yloc).click().perform();
 //	  WebDriverWait wait= new WebDriverWait(driver, 1000);
 //	  wait.until(ExpectedConditions.elementToBeClickable(o));
 	  //driver.manage().timeouts().implicitlyWait(7000, TimeUnit.SECONDS);
 	  driver.findElement(By.xpath("//input[@id='place_order']")).click();
+	  FileInputStream fis= new FileInputStream("C:\\Users\\Happy\\Desktop");
+	
+	 
+	 
 	  
 	  
 	  

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Testsuite]">
+  <test name="testone(failed)">
+    <classes>
+      <class name="lpackageone.Praticeimgupload">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- lpackageone.Praticeimgupload -->
+      <class name="lpackageone.impageupload">
+        <methods>
+          <include name="tearDown"/>
+          <include name="testing1"/>
+        </methods>
+      </class> <!-- lpackageone.impageupload -->
+      <class name="lpackageone.windowh">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- lpackageone.windowh -->
+      <class name="lpackageone.Againsnapshot">
+        <methods>
+          <include name="finishing"/>
+          <include name="fuction1"/>
+        </methods>
+      </class> <!-- lpackageone.Againsnapshot -->
+      <class name="lpackageone.downloadfile">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- lpackageone.downloadfile -->
+      <class name="lpackageone.facebooklogin">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- lpackageone.facebooklogin -->
+      <class name="lpackageone.googlelogin1">
+        <methods>
+          <include name="f"/>
+        </methods>
+      </class> <!-- lpackageone.googlelogin1 -->
+    </classes>
+  </test> <!-- testone(failed) -->
+</suite> <!-- Failed suite [Testsuite] -->

@@ -1,0 +1,9 @@
+<suite name="newsuite">
+<test name="testone">
+<parameter name="username" value="testuser_1"/>
+<parameter name="password" value="Test@123"/>
+<classes>
+<class name="com.commonLib.Newparameter"/>
+</classes>
+</test>
+</suite>

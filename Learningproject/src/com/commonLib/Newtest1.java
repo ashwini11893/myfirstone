@@ -5,6 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.AfterClass;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.Test;
 
 import com.relevantcodes.extentreports.ExtentReports;
@@ -13,14 +14,13 @@ import com.relevantcodes.extentreports.LogStatus;
 
 public class Newtest1 {
 	WebDriver driver;
-	public ExtentReports report;
-	public ExtentTest test;
+	 ExtentReports report;
+	 ExtentTest test;
   @Test
   public void f() throws InterruptedException {
-	  
-	  report=new ExtentReports("D://first//Learningproject//Reports//test.html");
+	  report=new ExtentReports("D://first//Learningproject//Reports//chek.html");
 	  test=report.startTest("checking the advance report");
-	 driver=PracticeBrowser.browserOpen("firefox");
+	 driver=InvokeBrowser.openBrowser("firefox");
 	 test.log(LogStatus.INFO, "firefox opened");
 	  driver.get("http://www.airindia.in/");
 	  test.log(LogStatus.INFO, "url is enetered");
@@ -63,7 +63,7 @@ public class Newtest1 {
 	   test.log(LogStatus.PASS, "test case gotr pass");
 	   
   }
-  @AfterClass
+  @AfterMethod
   public void tearDown(){
 	  test.assignAuthor("ashu");
 	  report.endTest(test);

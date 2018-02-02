@@ -1,0 +1,13 @@
+<suite name="Testcase">
+<test name="Testing">
+<groups>
+<run>
+<include name="groupone"/>
+<include name="grouptwo"/>
+</run>
+</groups>
+<classes>
+<class name="com.commonLib.firstclass"/>
+</classes>
+</test>
+</suite>

@@ -22,7 +22,7 @@ public class impageupload {
   public void testing1() throws Throwable 
   {
 	  driver=new FirefoxDriver();
-	  driver.get("https://pohostaging.com/");
+	  driver.get("https://app.pohostaging.com/");
 	 driver.manage().window().maximize();
 		  driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 		  driver.findElement(By.xpath("//a[contains(@href,'%3A%2F%2Fwww.googleapis.com%')]")).click();

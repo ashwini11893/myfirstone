@@ -16,7 +16,7 @@ public class Testone {
 	public void beforetest()
 	{
 		driver=InvokeBrowser.openBrowser("firefox");
-		driver.manage().window().maximize();
+		//driver.manage().window().maximize();
 	}
   @Test
   public void Testmethodone() 

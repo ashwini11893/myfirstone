@@ -9,7 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.events.EventFiringWebDriver;
 
 public class SnapShot1 {
-	
+	static WebDriver driver;
 	public static String SnapshotTake(WebDriver driver,String SnapShotName) throws IOException
 	{
 		EventFiringWebDriver edriver= new EventFiringWebDriver(driver);

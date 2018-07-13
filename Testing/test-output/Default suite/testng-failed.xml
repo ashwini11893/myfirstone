@@ -3,13 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="Newstartproject.Testing.mycaarTest">
+      <class name="com.Testing.Baseclass.Dataproviderinsameclass">
         <methods>
-          <include name="firsttestcase"/>
-          <include name="finishit"/>
-          <include name="verify"/>
+          <include name="testfunction"/>
         </methods>
-      </class> <!-- Newstartproject.Testing.mycaarTest -->
+      </class> <!-- com.Testing.Baseclass.Dataproviderinsameclass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

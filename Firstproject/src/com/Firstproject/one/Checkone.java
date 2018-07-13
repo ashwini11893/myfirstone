@@ -20,7 +20,7 @@ public class Checkone {
   @Test
   public void f() throws InterruptedException, FileNotFoundException {
 	  WebDriver driver= new FirefoxDriver();
-	  driver.get("https://app.pohostaging.com/");
+	  driver.get("https://pohostaging.com/");
 	  driver.manage().window().maximize();
 	  driver.manage().timeouts().implicitlyWait(5000, TimeUnit.SECONDS);
 	  driver.findElement(By.xpath("//a[text()='Login']")).click();

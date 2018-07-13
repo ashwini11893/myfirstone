@@ -28,16 +28,15 @@ public class mycaarTest
 	ExtentTest test;
 	@Test
 	public void firsttestcase() {
-		report=ReportClass.GenerateReport();
+		report=ReportClass.GenerateReport(report);
 		test=report.startTest("Testing will start here");
 		driver=InvokeBrowser.openBrowser("firefox");
 		test.log(LogStatus.INFO, "Launching firefox");
 		driver.get("http://mycaarstaging.com/lms/site/login");
 		test.log(LogStatus.INFO, "Opening the test url");
-//		driver.manage().window().maximize();
-//		test.log(LogStatus.INFO, "Maximamizing the window");
+		driver.manage().window().maximize();
+		test.log(LogStatus.INFO, "Maximamizing the window");
 		driver.manage().timeouts().implicitlyWait(6, TimeUnit.SECONDS);
-		//chnged here name
 		driver.findElement(By.xpath("//input[@id='loginform-username']")).sendKeys("8nif3lmnjtvas9@my10minutemail.com1");
 		test.log(LogStatus.INFO, "Entered the username");
 		test.log(LogStatus.INFO, "Entered the psw");
@@ -70,7 +69,7 @@ public class mycaarTest
 			test.log(LogStatus.PASS, "Testcase passed");
 		}
 		else{
-			String imagepath=SnapShot1.SnapshotTake(res.getName());
+			String imagepath=SnapShot1.SnapshotTake(driver,res.getName());
 			test.log(LogStatus.FAIL, test.addScreenCapture(imagepath));
 		}
 	}

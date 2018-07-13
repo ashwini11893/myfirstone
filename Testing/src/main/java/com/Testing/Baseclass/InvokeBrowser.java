@@ -1,4 +1,5 @@
 package com.Testing.Baseclass;
+
 import java.io.File;
 
 import org.openqa.selenium.WebDriver;
@@ -12,9 +13,6 @@ public class InvokeBrowser {
 	{
 		if(NameOfTheBrowser.equalsIgnoreCase("firefox"))
 		{
-			File f=new File("Drivers");
-			File fs=new File(f, "geckodriver.exe");
-			System.setProperty("webdriver.gecko.driver", fs.getAbsolutePath());
 			driver=new FirefoxDriver();
 		}
 		else

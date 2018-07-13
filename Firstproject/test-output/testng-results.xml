@@ -1,17 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="44" started-at="2018-05-31T10:33:20Z" finished-at="2018-05-31T10:33:20Z">
+  <suite name="Default suite" duration-ms="31" started-at="2017-09-27T06:17:07Z" finished-at="2017-09-27T06:17:07Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="44" started-at="2018-05-31T10:33:20Z" finished-at="2018-05-31T10:33:20Z">
-      <class name="com.Firstproject.one.NewTest">
-        <test-method status="PASS" signature="f1()[pri:0, instance:com.Firstproject.one.NewTest@6d78f375]" name="f1" duration-ms="9" started-at="2018-05-31T16:03:20Z" finished-at="2018-05-31T16:03:20Z">
+    <test name="Default test" duration-ms="31" started-at="2017-09-27T06:17:07Z" finished-at="2017-09-27T06:17:07Z">
+      <class name="com.Firstproject.one.Check">
+        <test-method status="PASS" signature="beforeClass()[pri:0, instance:com.Firstproject.one.Check@643b1d11]" name="beforeClass" is-config="true" duration-ms="7" started-at="2017-09-27T11:47:07Z" finished-at="2017-09-27T11:47:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.Firstproject.one.Check@643b1d11]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-09-27T11:47:07Z" finished-at="2017-09-27T11:47:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f2()[pri:1, instance:com.Firstproject.one.Check@643b1d11]" name="f2" duration-ms="4" started-at="2017-09-27T11:47:07Z" finished-at="2017-09-27T11:47:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f2 -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Firstproject.one.Check@643b1d11]" name="afterMethod" is-config="true" duration-ms="1" started-at="2017-09-27T11:47:07Z" finished-at="2017-09-27T11:47:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.Firstproject.one.Check@643b1d11]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-09-27T11:47:07Z" finished-at="2017-09-27T11:47:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="f1()[pri:2, instance:com.Firstproject.one.Check@643b1d11]" name="f1" duration-ms="2" started-at="2017-09-27T11:47:07Z" finished-at="2017-09-27T11:47:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- f1 -->
-      </class> <!-- com.Firstproject.one.NewTest -->
+        <test-method status="PASS" signature="f()[pri:3, instance:com.Firstproject.one.Check@643b1d11]" name="f" duration-ms="1" started-at="2017-09-27T11:47:07Z" finished-at="2017-09-27T11:47:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- f -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Firstproject.one.Check@643b1d11]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-09-27T11:47:07Z" finished-at="2017-09-27T11:47:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:com.Firstproject.one.Check@643b1d11]" name="beforeMethod" is-config="true" duration-ms="0" started-at="2017-09-27T11:47:07Z" finished-at="2017-09-27T11:47:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:com.Firstproject.one.Check@643b1d11]" name="afterMethod" is-config="true" duration-ms="0" started-at="2017-09-27T11:47:07Z" finished-at="2017-09-27T11:47:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="afterClass()[pri:0, instance:com.Firstproject.one.Check@643b1d11]" name="afterClass" is-config="true" duration-ms="0" started-at="2017-09-27T11:47:07Z" finished-at="2017-09-27T11:47:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterClass -->
+      </class> <!-- com.Firstproject.one.Check -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
